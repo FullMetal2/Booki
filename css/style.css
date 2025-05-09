@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -24,6 +25,30 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
+
+.LogoBooki {
+    margin-top: 30px; 
+    margin-left: 50px;
+    height: 19px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 68px;
+}
+
+nav a:hover {
+    border-top: 2px solid;
+    color: #0065FC;
+  }
+
+ul {
+    display: flex;
+    gap: 68px;
+    list-style: none;
+  }
 
 a {
     color: inherit;
