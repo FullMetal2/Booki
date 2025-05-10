@@ -17,6 +17,13 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    max-width: 1440px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h2 {
+    font-size: 22px;
 }
 
 .main-container {
@@ -32,6 +39,7 @@ header {
 
 .LogoBooki {
     height: 19px;
+    padding: 30px 50px 30px 0;
 }
 
 nav {
@@ -41,15 +49,29 @@ nav {
     gap: 68px;
 }
 
+nav a {
+    padding-top: 15px;
+}
+
 nav a:hover {
-    border-top: 2px solid;
-    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 ul {
     display: flex;
     gap: 68px;
     list-style: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.title-info {
+    gap: 8px;
+}
+
+.info {
+    gap: 35px;
 }
 
 .formulaire {
@@ -65,11 +87,8 @@ ul {
 
 .ville {
   border: none;
-  outline: none;
-  padding: 0.75rem 1rem;
   font-weight: bold;
   font-size: 18px;
-  height: 49px;
   text-align: center;
   
 }
