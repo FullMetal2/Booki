@@ -51,24 +51,44 @@ ul {
 .formulaire {
     display: flex;
     align-items: center;
+    
+    border-radius: 15px; /* pour un effet bien arrondi */
 }
 
 .logolocalisation {
-    height: 49px;
+    
+    padding: 0.75rem 1rem;
+    
 }
 
 .ville {
-    height: 49px;
+   /* height: 49px;
     font-size: 18px;
     text-align: center;
-    flex: 1;
+    flex: 1;*/
+      border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  font-size: 18px;
+  height: 49px;
+  text-align: center;
+  
 }
 
 .recherche {
-    height: 49px;
+    /*height: 49px;
     font-size: 18px;
     text-align: center;
-    background-color: #0065FC;
+    background-color: #0065FC;*/
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
 }
 
 a {
