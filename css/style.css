@@ -70,7 +70,9 @@ ul {
 }
 
 .info {
-    height: 281px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .container-recherche {
@@ -158,6 +160,15 @@ ul {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.fa-solid.fa-info {
+  border: 1px solid #d9d9d9;
+  border-radius: 9999px;
+  padding: 10px 10px;
+  height: 5px;
+  align-items: center;
+  display: flex;
 }
 
 .gap {
