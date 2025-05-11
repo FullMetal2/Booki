@@ -27,6 +27,9 @@ h2 {
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -72,7 +75,6 @@ ul {
 
 .container-recherche {
     display: flex;
-
 }
 
 .formulaire {
@@ -150,6 +152,18 @@ ul {
 
 .groupe-checkbox input[type="checkbox"]:checked + label {
     background-color: #DEEBFF;
+}
+
+.phrase {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gap {
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
