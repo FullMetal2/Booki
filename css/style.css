@@ -320,6 +320,27 @@ a {
     margin-bottom: 5px;
 }
 
+/********Activites********/
+
+.activites-card img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.activites-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.activites-card .card {
+    padding: 0;
+}
+
+
+
 
 
 
