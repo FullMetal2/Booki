@@ -239,6 +239,20 @@ a {
     width: 65%;
 }
 
+.hebergements-card img {
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.hebergements-card {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
