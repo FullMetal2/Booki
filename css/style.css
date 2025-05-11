@@ -240,6 +240,12 @@ a {
     width: 65%;
 }
 
+.hebergements-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .hebergements-card img {
   width: 100%;
   height: 114px;
