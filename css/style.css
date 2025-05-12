@@ -57,6 +57,7 @@ nav {
     gap: 68px;
 }
 
+
 nav a {
     padding-top: 15px;
 }
@@ -498,21 +499,42 @@ a {
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+    }
+
+    nav a {
+        position: relative;
+        text-decoration: none;
+    }
+
+    nav a::after {
+        content: "";
+        position: absolute;
+        left: -56px;
+        right: 0;
+        bottom: -15px;
+        height: 2px;
+        width: 100vw;
+        background-color: #f2f2f2;
     }
     
-    nav a:hover {
-    border-top: 2px solid #0065FC;
-}
+    nav a:hover::after {
+        width: 50vw;
+        left: 36%;
+        transform: translateX(-50%);
+        background-color: #0065FC;
+        border-top: none;
+    }
     
     .LogoBooki {
         padding: 30px;
     }
     
     .liste-header {
-        width: 100%;
-        border-bottom: 2px solid #f2f2f2;
+        width: 75%;
         gap: 15px;
         justify-content: space-between;
+        padding: 0;
     }
 
     .info {
@@ -547,6 +569,14 @@ a {
         padding: 0;
         width: 70%;
     }
+
+    .filtre .responsive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+         
+    }
+
+
 }
 
 
