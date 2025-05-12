@@ -576,6 +576,22 @@ a {
          
     }
 
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .hebergements-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
 
 }
 
