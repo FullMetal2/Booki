@@ -595,10 +595,6 @@ a {
         flex-direction: column;
     }
 
-    .activités {
-        height: 1000px;
-    }
-
     .activites-card {
         display: flex;
         flex-direction: column;
