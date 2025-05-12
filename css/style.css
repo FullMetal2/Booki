@@ -249,7 +249,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    height: 740px;
+    height: auto;
 }
 
 .hebergements-and-populaires section {
@@ -361,7 +361,7 @@ a {
 
 .activites-card {
     width: 100%;
-    height: 439px;
+    height: auto;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -467,6 +467,18 @@ a {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-card img {
+        height: 100%;
+    }
+
+    .activites-card .card {
+        height: 270px;
+    }
+
+    .activites-card a {
+        height: 270px;
     }
 }
 
@@ -593,6 +605,10 @@ a {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    .card h3 {
+        margin: 0;
     }
 
     .activites-card {
