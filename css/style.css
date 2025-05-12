@@ -585,10 +585,42 @@ a {
         flex-direction: column;
     }
 
+    .populaires-cards a {
+        width: 100%;
+    }
+
     .hebergements-card {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    .activités {
+        height: 1000px;
+    }
+
+    .activites-card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .activites-card img {
+        height: 141px;
+    }
+
+    .activites-card .card {
+        height: 200px;
+    }
+
+    .activites-card a {
+        height: 200px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
     }
 
 
