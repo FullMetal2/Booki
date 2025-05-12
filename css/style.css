@@ -92,8 +92,9 @@ nav a:hover {
 
 .formulaire {
     display: flex;
-    align-items: center;
-    border-radius: 15px; 
+    align-items: center; 
+    overflow: hidden;
+    width: fit-content;
 }
 
 .fa-solid.fa-location-dot {
@@ -110,14 +111,21 @@ nav a:hover {
 }
 
 .ville {
-    border: 1px solid #f2f2f2;
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+    padding: 10px;
 
 }
 
 .recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -130,6 +138,10 @@ nav a:hover {
 }
 
 .fa-solid.fa-magnifying-glass {
+    display: none;
+}
+
+.recherche-loupe {
     display: none;
 }
 
@@ -476,7 +488,7 @@ a {
         overflow-x: hidden;
         min-width: 320px;
     }
-    
+
     header {
         height: 115px;
     }
@@ -503,6 +515,11 @@ a {
         justify-content: space-between;
     }
 
+    .info {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
     .recherche {
         display: none;
     }
@@ -520,9 +537,15 @@ a {
     }
 
     .recherche-loupe {
+        display: inline;
         border: none;
         background: white;
         padding: 0;
+    }
+
+    .ville {
+        padding: 0;
+        width: 70%;
     }
 }
 
