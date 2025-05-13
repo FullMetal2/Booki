@@ -593,6 +593,15 @@ a {
         height: auto;
     }
 
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+
+     .hebergements-and-populaires .hebergements {
+    background-color: rgb(255, 255, 255);
+    } 
+
+
     .populaires-cards {
         flex-direction: column;
     }
