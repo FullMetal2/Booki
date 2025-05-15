@@ -61,52 +61,6 @@ nav {
     gap: 68px;
 }
 
-nav a {
-    position: relative;
-}
-
-
-nav a::before {
-    content: "";
-    position: absolute;
-    top: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 9vw;
-    height: 2px;
-    background-color: #fff;
-    display: block;
-}
-
-nav .before:hover::before {
-    width: 8vw;
-    background-color: #0065FC;
-}
-
-nav .before2:hover::before {
-    width: 15vw;
-    background-color: #0065FC;
-}
-
-nav a::after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 55vw;
-    height: 2px;
-    background-color: #f2f2f2;
-    display: none;
-}
-
-nav a:hover::after  {
-    width: 50vw;
-    background-color: #0065FC;
-}
-
-
-
 .liste-header {
     display: flex;
     gap: 68px;
@@ -466,12 +420,37 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+
+@media (min-width: 1024px) {
+
+    nav a { 
+    padding-top: 15px;
+}
+
+    nav a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+}
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 767.98px) {
 
     .responsive {
         display: flex;
     }
+
+    nav a { 
+        padding-top: 15px;
+}
+
+    nav a:hover {
+        border-top: 2px solid #0065FC;
+        color: #0065FC;
+}
 
     .filtre {
         display: flex;
@@ -558,30 +537,46 @@ a {
     }
     
     nav {
-        width: 100%;
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    nav a::before {
-        display: none;
+    nav a:hover {
+        border-bottom: 1px solid #0065FC;
+        color: #0065FC;
     }
 
-     nav a::after {
-        display: block;
+    .liste-header {
+        display: flex;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
+
+    .liste-header li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .liste-header a {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        padding: 10px 0;
+    }
+
+    .liste-header a span {
+        display: block;
+        padding-bottom: 15px;
+        position: relative;
+    }
+
     .LogoBooki {
         padding: 30px;
     }
     
-    .liste-header {
-        width: 75%;
-        gap: 15px;
-        justify-content: space-between;
-        padding: 0;
-    }
-
     .info {
         padding-right: 20px;
         padding-left: 20px;
@@ -615,6 +610,11 @@ a {
         width: 70%;
     }
 
+    .filtre {
+        display: flex;
+        flex-direction: column;
+    }
+
     .filtre .responsive {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -635,11 +635,13 @@ a {
         gap: 15px;
         padding: 30px 20px 30px 20px;
         margin: 0;
+        width: 100%;
     }
 
      .hebergements-and-populaires .hebergements {
         background-color: rgb(255, 255, 255);
         padding: 20px;
+        width: 100%;
     } 
 
     .populaires-cards {
