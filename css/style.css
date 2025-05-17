@@ -423,7 +423,7 @@ a {
 /****** Media queries ***********/
 
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
 
     body {
         max-width: 1440px;
@@ -433,12 +433,12 @@ a {
     }
 
     nav a { 
-    padding-top: 15px;
+        padding-top: 15px;
 }
 
     nav a:hover {
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
+        border-top: 2px solid #0065FC;
+        color: #0065FC;
 }
 
 }
@@ -446,6 +446,12 @@ a {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) and (min-width: 767.98px) {
+
+    body {
+
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 
     .responsive {
         display: flex;
