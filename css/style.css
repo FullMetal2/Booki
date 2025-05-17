@@ -576,6 +576,7 @@ a {
         width: 100%;
         color: black;
         padding: 10px 0;
+        border-bottom: 1px solid #F2F2F2;
     }
 
     .liste-header a span {
