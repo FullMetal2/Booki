@@ -86,8 +86,6 @@ nav {
 .formulaire {
     display: flex;
     align-items: center; 
-    overflow: hidden;
-    width: fit-content;
 }
 
 .fa-solid.fa-location-dot {
@@ -140,9 +138,9 @@ nav {
 
 .filtre {
     flex-direction: row;
-  display: flex;
-  align-items: baseline;
-  gap: 15px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
 }
 
 .filtre .responsive {
@@ -168,9 +166,6 @@ nav {
 }
 
 .groupe-checkbox input[type="checkbox"] {
-    /*appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;*/
     width: 0;
     height: 0;
     margin: 0;
@@ -593,6 +588,10 @@ a {
         padding-left: 20px;
     }
 
+    .formulaire {
+        position: relative;
+    }
+
     .recherche {
         display: none;
     }
@@ -614,6 +613,10 @@ a {
         border: none;
         background: white;
         padding: 0;
+        position: absolute;
+        left: 240px;
+        height: 49px;
+        clip-path: inset(0 round 15px);
     }
 
     .ville {
