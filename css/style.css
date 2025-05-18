@@ -16,11 +16,11 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
-    max-width: 1440px;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -40,10 +40,6 @@ p {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
 }
 
 header {
@@ -447,11 +443,7 @@ a {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) and (min-width: 767.98px) {
 
-    body {
 
-        padding-left: 50px;
-        padding-right: 50px;
-    }
 
     .responsive {
         display: flex;
@@ -518,11 +510,11 @@ a {
     }
 
     .activites-card .card {
-        height: 270px;
+        height: 290px;
     }
 
     .activites-card a {
-        height: 270px;
+        height: 290px;
     }
 }
 
