@@ -81,6 +81,7 @@ nav {
 
 .container-recherche {
     display: flex;
+    height: 49px;
 }
 
 .formulaire {
@@ -588,10 +589,6 @@ a {
         padding-left: 20px;
     }
 
-    .formulaire {
-        position: relative;
-    }
-
     .recherche {
         display: none;
     }
@@ -605,23 +602,38 @@ a {
         font-weight: bold;
         border-radius: 15px;
         font-size: 18px;
-        height: 49px;
     }
 
     .recherche-loupe {
-        display: inline;
+        display: block;
         border: none;
         background: white;
         padding: 0;
-        position: absolute;
-        left: 240px;
-        height: 49px;
-        clip-path: inset(0 round 15px);
+        margin: 15.4px -20px;
     }
+
+    .dorp-shadows {
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .loupe {
+        display: flex;
+        width: 100%;
+        border: none;
+        border-top: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+
+
 
     .ville {
         padding: 0;
         width: 70%;
+        border: none;
     }
 
     .filtre {
