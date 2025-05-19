@@ -102,6 +102,10 @@ nav {
     border-bottom-left-radius: 15px;
 }
 
+.loupe {
+    display: flex;
+}
+
 .ville {
     border: none;
     border-top: 1px solid #f2f2f2;
