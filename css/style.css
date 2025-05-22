@@ -71,6 +71,12 @@ nav {
     margin-bottom: 50px;
 }
 
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .info {
     display: flex;
     flex-direction: column;
