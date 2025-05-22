@@ -137,10 +137,20 @@ nav {
     height: 49px;
 }
 
-.fa-solid.fa-magnifying-glass {
-    display: none;
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
+
+/***** Cache le logo loupe pour le desktop *****/
 .recherche-loupe {
     display: none;
 }
@@ -204,12 +214,6 @@ nav {
     height: 5px;
     align-items: center;
     display: flex;
-}
-
-.gap {
-    gap: 35px;
-    display: flex;
-    flex-direction: column;
 }
 
 a {

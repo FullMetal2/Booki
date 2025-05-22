@@ -21,9 +21,9 @@
                     <img src="./images/logo-booki/Logo.png" alt="Logo Booki" class="LogoBooki">
                 </h1>
                 <ul class="liste-header">
-                    <li><a href="#hebergements-a-Marseille" class="before">Hébergements</a><span></span>
+                    <li><a href="#hebergements-a-Marseille">Hébergements</a>
                     </li>
-                    <li><a href="#Activité" class="before">Activités</a><span></span>
+                    <li><a href="#Activité">Activités</a>
                     </li>
                 </ul>
             </nav>
@@ -31,14 +31,15 @@
         <main class="gap">
             <section class="info">
                 <div class="title-info">
-                    <h2>Trouver votre hébergement pour des vancances de rève</h2>
+                    <h2>Trouver votre hébergement pour des vancances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div class="formulaire">
                     <form action="." class="container-recherche">
                         <i class="fa-solid fa-location-dot"></i>
                     <div class="loupe">
-                        <input type="text" name="ville" value="Marseille, France" class="ville">
+                        <label for="ville" class="sr-only">Destination</label>
+                        <input type="text" id="ville" name="ville" value="Marseille, France" class="ville">
                         <button class="recherche">Rechercher</button>
                     </div>
                     <div class="dorp-shadows">
@@ -47,7 +48,7 @@
                     </form>
                 </div>
                 <div class="filtre">
-                    <div class="responsive">
+                <div class="responsive">
                     <h3 class="title-filtre">Filtres</h3>
                     </div>
                 <div class="responsive">
@@ -76,7 +77,7 @@
                         <input type="checkbox" name="filtre" id="nos-pepites">
                         <label for="nos-pepites" class="survol">
                             <i class="fa-solid fa-fire"></i>
-                            Nos pétites
+                            Nos pépites
                         </label>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
                     <div class="hebergements-card">
                     <a href="#">
                         <article class="card">
-                            <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant deux lit">
+                            <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant deux lits">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel du port</h3>
@@ -114,7 +115,7 @@
                     </a>
                     <a href="#">
                         <article class="card">
-                            <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant deux lit">
+                            <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant deux lits">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Chez Amina</h3>
@@ -190,7 +191,7 @@
                     </a>
                     <a href="#">
                         <article class="card">
-                            <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant plusieur lit">
+                            <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant plusieurs lits">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Auberge le panier</h3>
@@ -283,7 +284,7 @@
             <div class="activités">
                 <section id="Activité">
                         <div>   
-                            <h2 class="section-title">Activités à marseille</h2>
+                            <h2 class="section-title">Activités à Marseille</h2>
                         </div>
                     <div class="activites-card">
                         <a href="#">
@@ -326,7 +327,7 @@
                         </li>
                         <li>
                             <a href=".">
-                                Conditions générals
+                                Conditions générales
                             </a>
                         </li>
                         <li>
